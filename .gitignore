@@ -1,52 +1,30 @@
-# Prerequisites
-*.d
+#include <stdio.h> 
+int main() 
+{
+ // prompting the user
+int a; 
+printf("enter a number between 1 and 5 and I will choose one food for you: " ); 
+scanf("%d", &a); 
+// building the choices 
+Switch(a) 
+{ 
+case 1 : 
+   Printf("Pizza!!! \n Rs 249"); 
+   break; 
+case 2 : 
+   printf("Burger!!! \n Rs 129"); 
+   break; 
+case 3 : 
+   printf("Pasta!!! \n Rs 179"); 
+   break; 
+case 4 : 
+   printf("French fries!!! \n Rs 99"); 
+   break;
+case 5 : 
+   printf("Sandwich!!! \n Rs 179"); 
+   break;
+default : printf("Sorry that's not included in today's special list"); 
+} 
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+return 0; 
+} 
